@@ -1,48 +1,19 @@
-# Terraform Azure + Docker + PostgreSQL SQL Project
+# 🔧 Azure Ubuntu VM with Redis, Redis‑UI & NGINX (Terraform)
 
-## 🚀 What This Project Does
-
-- Creates an Ubuntu VM on Azure using Terraform
-- Installs Docker on the VM
-- Runs PostgreSQL in a Docker container
-- Executes SQL JOINs with sample schema
-
-## 📂 Project Structure
-terraform-azure-docker-sql/
-├── main.tf
-├── variables.tf
-├── terraform.tfvars
-├── outputs.tf
-├── sql/
-│   ├── schema.sql
-│   └── joins.sql
-└── README.md
-
-## 🔧 Technologies Used
-
-- Terraform
-- Azure Virtual Machine
-- Docker
-- PostgreSQL
-- SQL
-
-## 💡 Key Concepts
-
-- Infrastructure as Code (IaC)
-- Cloud provisioning
-- Containerized SQL environment
-- SQL JOIN operations (INNER, LEFT, RIGHT, FULL OUTER)
-
-## 🧠 SQL JOIN Diagrams
-
-- INNER JOIN: Matches in both
-- LEFT JOIN: All left + matched right
-- RIGHT JOIN: All right + matched left
-- FULL OUTER JOIN: Everything
-
-## 👨‍💻 Author
-
-Nirnay Reddy
+This project uses Terraform to provision an Ubuntu VM in Azure, installs Redis and Redis‑UI, and configures NGINX as a reverse proxy to serve the Redis‑UI web interface.
 
 ---
 
+## 📋 Prerequisites
+
+- Azure CLI (`az`) configured and authenticated
+- Terraform v1.x installed
+- SSH key configured for VM access
+
+---
+
+## 🚀 Deployment Steps
+
+1. **Initialize Terraform:**
+   ```bash
+   terraform init
