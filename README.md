@@ -29,11 +29,15 @@ This project:
 ---
 
 ## 🗂️ *Project Structure*
-/azure-docker-redis-lab
-├── docker-compose.yml
-├── nginx/
-│   └── default.conf
-├── init-script.sh (optional for cloud-init)
+azure-docker-redis-lab/
+│
+├── docker/
+│   └── docker-compose.yaml
+│
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── terraform.tfvars
 └── README.md
 
 ## ⚙️ *Services and Ports*
